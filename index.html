@@ -1,47 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play vinyl</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <main>
-        <div class="record-player">
-            <div class="vinyl">
-              <div class="vinyl-img"></div>
-              <div class="vinyl-middle"></div>
-            </div>
-          </div>
-          <svg width="300" height="520">
-            <defs>
-                <linearGradient id="Gradient1">
-                  <stop class="stop1" offset="0%"/>
-                  <stop class="stop2" offset="50%"/>
-                  <stop class="stop3" offset="100%"/>
-                </linearGradient>
-              <style type="text/css">
-                  #rect1 { fill: url(#Gradient1); }
-                  .stop1 { stop-color: grey; }
-                  .stop2 { stop-color: white; stop-opacity: 0; }
-                  .stop3 { stop-color: grey; }
-                  #rect2 { fill: url(#Gradient2); }
-                  .stop1 { stop-color: grey; }
-                  .stop2 { stop-color: white; stop-opacity: 1; }
-                  .stop3 { stop-color: grey; }
-              </style>
-          </defs>
-             
-              <rect id='rect2' ry='10' x="192" y="18"width="20" height="374" style="fill:url(#Gradient1)" />
-              <rect id='rect1' x="170" width="64" height="28" style="fill:url(#Gradient1)" />
-              <rect id='rect2' ry='10' x="335" y="258" width="20" height="135" style="fill:url(#Gradient1);transform: rotate(25deg)" />
-              <rect id='rect2' x="328" y="282" width="17" height="112" style="fill:#282424;transform: rotate(25deg)" />
-              <rect id='rect2' x="347" y="282" width="17" height="112" style="fill:#282424; transform: rotate(25deg)" />
-              <rect id='rect2' x="334" y="282" width="11" height="112" style="fill:#393739;transform: rotate(25deg)" />
-              <rect id='rect2' x="347" y="282" width="11" height="112" style="fill:#393739; transform: rotate(25deg)" />
-          </svg>
-        <button></button>
-    </main>
+  <main>
+    <div class="record-player">
+      <input type="checkbox" class="btn-play" id="btn-play">
+      <label for="btn-play" class="btn-play"></label>
+      <div class="vinyl">
+        <div class="vinyl-img"></div>
+        <div class="vinyl-middle"></div>
+      </div>
+      <svg class="stick" width="300" height="520" xmlns="http://www.w3.org/2000/svg" >
+        <defs>
+          <filter id="shadow"  x="-50%" y="0%" width="160%" height="150%">
+            <feDropShadow dx="-3" dy="5"  stdDeviation="2" flood-color="#000000" flood-opacity="0.4"/>
+          </filter>
+          <linearGradient id="Gradient1">
+            <stop class="stop1" offset="0%" />
+            <stop class="stop2" offset="50%"/>
+            <stop class="stop3" offset="100%"/>
+          </linearGradient>
+          <style type="text/css">
+            #rect1 {
+              fill: url(#Gradient1);
+            }
+  
+            .stop1 {
+              stop-color: #a3a2a6;
+            }
+  
+            .stop2 {
+              stop-color: white;
+              stop-opacity: 0;
+            }
+  
+            .stop3 {
+              stop-color: #a3a2a6;
+            }
+  
+            #rect2 {
+              fill: url(#Gradient2);
+            }
+  
+            .stop1 {
+              stop-color: #a3a2a6;
+            }
+  
+            .stop2 {
+              stop-color: white;
+              stop-opacity: 1;
+            }
+  
+            .stop3 {
+              stop-color: #a3a2a6;
+            }
+          </style>
+        </defs>
+        <rect  id='just-shadow' x="170" width="64" height="28" style="filter: url(#shadow);" />
+        <rect  id='rect2' ry='10' x="192" y="18" width="20" height="374" style="fill:url(#Gradient1);filter: url(#shadow);" />
+        <rect  id='rect1' x="170" width="64" height="28" style="fill:url(#Gradient1)" />
+        <rect  id='rect2' ry='10' x="335" y="258" width="20" height="135"
+          style="fill:url(#Gradient1);transform: rotate(25deg);filter: url(#shadow);" />
+         
+        <rect  id='rect2' x="328" y="282" width="17" height="112" style="fill:#282424;transform: rotate(25deg);filter: url(#shadow);" />
+        <rect  id='rect2' x="347" y="282" width="17" height="112" style="fill:#282424; transform: rotate(25deg);filter: url(#shadow)" />
+        <rect  id='rect2' x="334" y="282" width="11" height="112" style="fill:#393739;transform: rotate(25deg);" />
+        <rect  id='rect2' x="347" y="282" width="11" height="112" style="fill:#393739; transform: rotate(25deg);" />
+      </svg>
+    </div>
+    <div class="disc-underTonarm"></div>
+    <!-- stick was here -->
+    <div class="disc-overTonarm"></div>
+    
+     
+    
+    
+  </main>
 </body>
+
 </html>
