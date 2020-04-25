@@ -8,7 +8,7 @@ body {
 }
 
 main {
-    background-image: url('background.png');
+    background-image: url('https://github.com/kulia26/vinyl/blob/master/background.png?raw=true');
     height: 650px;
     width: 810px;
     border-radius: 6px;
@@ -147,7 +147,7 @@ main {
 }
 
 .vinyl-img {
-    background-image: url('vinyl5.jpg');
+    background-image: url('https://github.com/kulia26/vinyl/blob/master/vinyl5.jpg?raw=true');
     background-size: 170px;
     top: 185px;
     left: 185px;
@@ -192,9 +192,14 @@ svg {
     z-index: 1000;
     top: 92px;
     right: 138px;
-    box-shadow: -3px 5px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    
 }
-
+#invisible{
+    background: none;
+    box-shadow: -3px 5px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
 
 .disc-underTonarm,
 .disc-overTonarm,
