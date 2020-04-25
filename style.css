@@ -20,9 +20,9 @@ main {
 /* play btn */
 #btn-play {
     visibility: hidden;
-  }
-  
-  .btn-play {
+}
+
+.btn-play {
     position: absolute;
     width: 80px;
     height: 80px;
@@ -30,38 +30,36 @@ main {
     left: 647px;
     border: solid 3px rgba(0, 0, 0, 0.8);
     border-radius: 70px;
-    background: conic-gradient(
-      #cdcdcd,
-      #9d9d9d,
-      #808080,
-      #bcbcbc,
-      #c4c4c4,
-      #e6e6e6,
-      #dddddd,
-      #a1a1a1,
-      #7f7f7f,
-      #8b8b8b,
-      #bfbfbf,
-      #e3e3e3,
-      #d2d2d2,
-      #a6a6a6,
-      #858585,
-      #8d8d8d,
-      #c0c0c0,
-      #e5e5e5,
-      #d6d6d6,
-      #9e9e9e,
-      #828282,
-      #8f8f8f,
-      #bdbdbd,
-      #e3e3e3,
-      #cdcdcd
-    );
+    background: conic-gradient(#cdcdcd,
+            #9d9d9d,
+            #808080,
+            #bcbcbc,
+            #c4c4c4,
+            #e6e6e6,
+            #dddddd,
+            #a1a1a1,
+            #7f7f7f,
+            #8b8b8b,
+            #bfbfbf,
+            #e3e3e3,
+            #d2d2d2,
+            #a6a6a6,
+            #858585,
+            #8d8d8d,
+            #c0c0c0,
+            #e5e5e5,
+            #d6d6d6,
+            #9e9e9e,
+            #828282,
+            #8f8f8f,
+            #bdbdbd,
+            #e3e3e3,
+            #cdcdcd);
     box-shadow: inset 0px 0px 3px 3px rgb(0, 0, 0, 0.5);
     z-index: 60;
-  }
-  
-  .btn-play::before {
+}
+
+.btn-play::before {
     content: "";
     position: absolute;
     width: 30px;
@@ -70,9 +68,9 @@ main {
     top: 23px;
     left: 28px;
     border-radius: 5px;
-  }
-  
-  .btn-play:after {
+}
+
+.btn-play:after {
     content: "";
     position: absolute;
     top: 23px;
@@ -83,46 +81,50 @@ main {
     border-top: solid 4px rgb(65, 62, 62);
     border-right: solid 4px rgb(65, 62, 62);
     border-radius: 4px;
-  }
-  
-  .btn-play:checked + label:before {
+}
+
+.btn-play:checked+label:before {
     content: "";
     border-left: solid 4px rgb(255, 123, 0);
     box-shadow: -3px 0px 4px rgba(255, 123, 0, 0.4);
-    
-  }
-  
-  .btn-play:checked + label:after {
+
+}
+
+.btn-play:checked+label:after {
     content: "";
     border-top: solid 4px rgb(255, 123, 0);
     border-right: solid 4px rgb(255, 123, 0);
     box-shadow: 2px -2px 5px rgba(255, 123, 0, 0.4);
 
-  }
-  @keyframes rotating {
+}
+
+@keyframes rotating {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     to {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  .btn-play:checked + label + .vinyl > .vinyl-img {
+}
+
+.btn-play:checked+label+.vinyl>.vinyl-img {
     animation: 4s rotating 1s linear infinite;
-  }
+}
 
-  @keyframes move-stick {
+@keyframes move-stick {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-    100% {
-      transform: rotate(20deg);
-    }
-  }
 
-  .btn-play:checked ~ .stick {
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+.btn-play:checked~.stick {
     animation: 0.5s linear 0s move-stick forwards;
-  }
+}
 
 /* vinyl */
 .record-player {
@@ -190,7 +192,7 @@ svg {
     z-index: 1000;
     top: 92px;
     right: 138px;
-    box-shadow: -3px 5px 10px rgba(0,0,0,0.5);
+    box-shadow: -3px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -199,13 +201,13 @@ svg {
 .btn-play {
     border-radius: 50%;
     background: conic-gradient(#d7d7d7, #c3c3c3, #cccccc, #c6c6c6,
-    #d3d3d3, #d8d8d8, #d5d5d5, #d8d8d8,
-    #d3d3d3, #c5c5c5, #c0c0c0, #bfbfbf,
-    #d0d0d0, #d9d9d9, #d1d1d1, #c5c5c5,
-    #c8c8c8, #d7d7d7, #d5d5d5, #cdcdcd,
-    #c4c4c4, #d9d9d9, #cecece, #c5c5c5,
-    #c5c5c5, #cdcdcd, #d8d8d8, #d9d9d9,
-    #d7d7d7) content-box;
+            #d3d3d3, #d8d8d8, #d5d5d5, #d8d8d8,
+            #d3d3d3, #c5c5c5, #c0c0c0, #bfbfbf,
+            #d0d0d0, #d9d9d9, #d1d1d1, #c5c5c5,
+            #c8c8c8, #d7d7d7, #d5d5d5, #cdcdcd,
+            #c4c4c4, #d9d9d9, #cecece, #c5c5c5,
+            #c5c5c5, #cdcdcd, #d8d8d8, #d9d9d9,
+            #d7d7d7) content-box;
 }
 
 .disc-underTonarm,
@@ -217,7 +219,7 @@ svg {
 .btn-play {
     -webkit-box-shadow: inset 0px 0px 0px 4px rgba(0, 0, 0, 1);
     -moz-box-shadow: inset 0px 0px 3px 4px rgba(0, 0, 0, 1);
-    box-shadow: inset 0px 0px 2px 3px rgba(0, 0, 0, 1), inset 0px 0px 3px 3px #8a8a8a, inset 0px 0px 2px 6px #fff,  -3px 5px 8px rgba(0,0,0,0.6);
+    box-shadow: inset 0px 0px 2px 3px rgba(0, 0, 0, 1), inset 0px 0px 3px 3px #8a8a8a, inset 0px 0px 2px 6px #fff, -3px 5px 8px rgba(0, 0, 0, 0.6);
 }
 
 .disc-underTonarm {
