@@ -126,6 +126,11 @@ main {
     animation: 0.5s linear 0s move-stick forwards;
 }
 
+.btn-play:checked~.disc-overTonarm {
+    animation: 0.5s linear 0s move-stick forwards;
+}
+
+
 /* vinyl */
 .record-player {
     position: absolute;
@@ -190,12 +195,12 @@ svg {
     height: 80px;
     position: absolute;
     z-index: 1000;
-    top: 92px;
-    right: 138px;
+    top: 55px;
+    right: -72px;
     z-index: 1000;
-    
 }
-#invisible{
+
+#invisible {
     background: none;
     box-shadow: -3px 5px 10px rgba(0, 0, 0, 0.5);
     z-index: 1;
@@ -230,6 +235,6 @@ svg {
     height: 190px;
     position: absolute;
     z-index: 1;
-    top: 37px;
-    right: 81px;
+    top: 0px;
+    right: -130px;
 }
