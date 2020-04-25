@@ -222,8 +222,6 @@ svg {
 
 .disc-underTonarm,
 .btn-play {
-    -webkit-box-shadow: inset 0px 0px 0px 4px rgba(0, 0, 0, 1);
-    -moz-box-shadow: inset 0px 0px 3px 4px rgba(0, 0, 0, 1);
     box-shadow: inset 0px 0px 2px 3px rgba(0, 0, 0, 1), inset 0px 0px 3px 3px #8a8a8a, inset 0px 0px 2px 6px #fff, -3px 5px 8px rgba(0, 0, 0, 0.6);
 }
 
