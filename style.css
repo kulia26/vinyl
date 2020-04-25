@@ -30,7 +30,7 @@ main {
     left: 647px;
     border: solid 3px rgba(0, 0, 0, 0.8);
     border-radius: 70px;
-    background: repeating-radial-gradient(circle at 50%, #9696964a, #9696964a 1px, #9696964a, #9696964a 1px), conic-gradient(#d7d7d7, #c3c3c3, #cccccc, #c6c6c6, #d3d3d3, #d8d8d8, #d5d5d5, #d8d8d8, #d3d3d3, #c5c5c5, #c0c0c0, #bfbfbf, #d0d0d0, #d9d9d9, #d1d1d1, #c5c5c5, #c8c8c8, #d7d7d7, #d5d5d5, #cdcdcd, #c4c4c4, #d9d9d9, #cecece, #c5c5c5, #c5c5c5, #cdcdcd, #d8d8d8, #d9d9d9, #d7d7d7) content-box;
+    background: repeating-radial-gradient(circle at 50%, #96969629, #9696964a 1px, #9696962e, #9696964a 1px), conic-gradient(#d7d7d7, #c3c3c3, #cccccc, #c6c6c6, #d3d3d3, #d8d8d8, #d5d5d5, #d8d8d8, #d3d3d3, #c5c5c5, #c0c0c0, #bfbfbf, #d0d0d0, #d9d9d9, #d1d1d1, #c5c5c5, #c8c8c8, #d7d7d7, #d5d5d5, #cdcdcd, #c4c4c4, #d9d9d9, #cecece, #c5c5c5, #c5c5c5, #cdcdcd, #d8d8d8, #d9d9d9, #d7d7d7) content-box;
     box-shadow: inset 0px 0px 2px 3px rgba(0, 0, 0, 1), inset 0px -1px 2px 5px #8a8a8a, inset 0px 1px 2px 5px #fff, -3px 5px 8px rgba(0, 0, 0, 0.6);
     z-index: 60;
 }
